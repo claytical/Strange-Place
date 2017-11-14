@@ -22,9 +22,8 @@ public class Gun : MonoBehaviour {
 				newObj.transform.position = transform.position;
 
 			} else {
-				GameObject newObj = (GameObject)Instantiate (bullet);
-				newObj.transform.position = transform.position;
-				newObj.transform.rotation = transform.rotation;
+				GameObject newObj = (GameObject)Instantiate(bullet,Camera.main.transform.position + transform.forward,Camera.main.transform.rotation);
+				newObj.GetComponent<Snowball> ().direction = Camera.main.transform.forward;
 			}
 
 
