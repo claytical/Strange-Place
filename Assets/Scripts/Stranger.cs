@@ -23,6 +23,7 @@ public class Stranger : MonoBehaviour {
 		sawYou = false;
 		raycastTimer = Time.time;
 	}
+
 	public void StopFollowing() {
 		followsYou = false;
 		talkingToYou = false;

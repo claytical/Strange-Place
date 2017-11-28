@@ -17,7 +17,7 @@ public class AudioZone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
-			mix.TransitionTo (1f);
+			mix.TransitionTo (10f);
 			Debug.Log ("Switching Audio Snapshot");
 		}
 	}
